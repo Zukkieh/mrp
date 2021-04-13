@@ -13,6 +13,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 1,
@@ -28,6 +30,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 2,
@@ -43,6 +47,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 3,
@@ -58,6 +64,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 4,
@@ -73,6 +81,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 5,
@@ -88,6 +98,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 6,
@@ -103,6 +115,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 7,
@@ -118,6 +132,8 @@ export const INITIAL_VALUES = [
         calcular: false,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 8,
@@ -133,6 +149,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 9,
@@ -148,6 +166,8 @@ export const INITIAL_VALUES = [
         calcular: false,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 10,
@@ -163,6 +183,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 11,
@@ -178,6 +200,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 12,
@@ -193,6 +217,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 13,
@@ -208,6 +234,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 14,
@@ -223,6 +251,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 15,
@@ -238,6 +268,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 16,
@@ -253,6 +285,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 17,
@@ -268,6 +302,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 18,
@@ -283,6 +319,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 19,
@@ -298,6 +336,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 20,
@@ -313,6 +353,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 21,
@@ -328,6 +370,8 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
     {
         id: 22,
@@ -343,5 +387,7 @@ export const INITIAL_VALUES = [
         calcular: true,
         entradas: [0, 0, 0, 0, 0, 0, 0, 0],
         saida: [0, 0, 0, 0, 0, 0, 0, 0],
+        recebimentosProgramados: [0, 0, 0, 0, 0, 0, 0, 0],
+        estoqueProjetado: [0, 0, 0, 0, 0, 0, 0, 0]
     },
 ]
