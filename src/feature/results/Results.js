@@ -66,7 +66,7 @@ const Results = () => {
                                 </div>
 
                                 <div className='results-row'>
-                                    <span className='results-name'>Necessidade bruta</span>
+                                    <span className='results-name'>Recebimento</span>
                                     {
                                         item.estoqueProjetado.map((ent, index) => {
                                             return <span className='results-txt' key={index}>{ent}</span>
