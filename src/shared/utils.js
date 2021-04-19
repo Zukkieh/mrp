@@ -1,7 +1,7 @@
 export const INITIAL_VALUES = [
     {
         id: 0,
-        nome: "lapiseira",
+        nome: "Lapiseira",
         tamanhoLote: 500,
         leadTime: 1,
         estoqueSegurança: 0,

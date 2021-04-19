@@ -1,8 +1,8 @@
 import { createStore } from 'easy-peasy';
-import counter from '../counterModel';
+import items from '../itemsModel';
 
 const models = {
-    counter
+    items
 };
 
 export const store = createStore(models, {

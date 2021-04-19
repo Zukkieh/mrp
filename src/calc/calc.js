@@ -1,11 +1,11 @@
-// i é o id do item que estamos trabalhando
+// item.id é o id do item que estamos trabalhando
 // j é a semana
 
 export const calculate = (items) => {
 
     const newItems = JSON.parse(JSON.stringify(items));
 
-    newItems.forEach(item => {
+    newItems.forEach((item) => {
         if(item.pai !== -1) { // Se não for a própria lapiseira atribui as entradas como saída do pai
             for(let j = 0;j<=8;j++) {
                 item.entradas[j] = newItems[item.pai].saida[j] * item.quantidadeReceita;
@@ -27,18 +27,18 @@ export const calculate = (items) => {
                 // Talvez essa validação seja válida até mesmo para semanas iniciais, se o Lead time maior que o prazo de semanas.
             }
             for(let j = 1;j<8 ;j++){ // Cálculos para as demais semanas
-                if(item.estoqueProjetado[j-1] - item.entradas[i] > item.estoqueSegurança){
-                    item.estoqueProjetado[j] = item.estoqueProjetado[j-1] - item.entradas[i];
+                if(item.estoqueProjetado[j-1] - item.entradas[item.id] > item.estoqueSegurança){
+                    item.estoqueProjetado[j] = item.estoqueProjetado[j-1] - item.entradas[item.id];
                 }
                 else {
                     try{
                         let aux = 1 // Variável para saber qual será o multiplicador do lote mínimo
-                        while((item.tamanhoLote * aux) +  item.estoqueProjetado[j-1] - item.entradas[i] < item.estoqueSegurança){
+                        while((item.tamanhoLote * aux) +  item.estoqueProjetado[j-1] - item.entradas[item.id] < item.estoqueSegurança){
                             aux++;
                         } // Tenta atribuir para a semana que deve ser pedido se ela existir
-                        item.saida[j - item[i].leadTime] = item.tamanhoLote * aux;
+                        item.saida[j - item[item.id].leadTime] = item.tamanhoLote * aux;
                         item.recebimentosProgramados[j] = item.tamanhoLote * aux;
-                        item.estoqueProjetado[j] = (item.tamanhoLote * aux) + item.estoqueProjetado[j-1] - item.entradas[i];
+                        item.estoqueProjetado[j] = (item.tamanhoLote * aux) + item.estoqueProjetado[j-1] - item.entradas[item.id];
                     } catch (e) {
                         item.estoqueProjetado[j] = 0;
                         // Pensar em como informar que o lead time é maior que o tempo que se tem para produzir, ou se vamos zerar o estoque como na prova
