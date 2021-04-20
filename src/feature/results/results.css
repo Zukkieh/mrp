@@ -71,36 +71,9 @@
     text-align: center;
 }
 
-/* .results-row {
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-}
-
-.results-name {
-    font-size: 16px;
-    width: 150px;
-    text-align: left;
-}
-
-.results-header:first-child {
-    font-size: 16px;
-    width: 150px;
-    margin: 0;
-    text-align: left;
-    font-weight: bold;
-}
-
-.lapiseira-header {
-    font-size: 16px;
+.stock-out {
+    font-size: 14px;
     width: 114px;
-    margin: 0 19px 0 0;
     text-align: center;
-    font-weight: bold;
+    color: red
 }
-
-.lapiseira-input {
-    padding: 2px 5px;
-    width: 100px;
-    margin: 0 19px 0 0;
-} */

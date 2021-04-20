@@ -42,7 +42,7 @@ const Results = () => {
                                     <span className='results-name'>Necessidade bruta</span>
                                     {
                                         item.entradas.map((ent, index) => {
-                                            return <span className='results-txt' key={index}>{ent}</span>
+                                            return <span className={`${ent === -1 ? 'stock-out' : 'results-txt'}`} key={index}>{ent === -1 ? 0 : ent}</span>
                                         })
                                     }
                                 </div>
@@ -51,7 +51,7 @@ const Results = () => {
                                     <span className='results-name'>{`Est. projetado | ${item.estoqueInicial}`}</span>
                                     {
                                         item.estoqueProjetado.map((ent, index) => {
-                                            return <span className='results-txt' key={index}>{ent}</span>
+                                            return <span className={`${ent === -1 ? 'stock-out' : 'results-txt'}`} key={index}>{ent === -1 ? 0 : ent}</span>
                                         })
                                     }
                                 </div>
@@ -60,7 +60,7 @@ const Results = () => {
                                     <span className='results-name'>Recebimentos Planej.</span>
                                     {
                                         item.recebimentosProgramados.map((ent, index) => {
-                                            return <span className='results-txt' key={index}>{ent}</span>
+                                            return <span className={`${ent === -1 ? 'stock-out' : 'results-txt'}`} key={index}>{ent === -1 ? 0 : ent}</span>
                                         })
                                     }
                                 </div>
@@ -69,7 +69,7 @@ const Results = () => {
                                     <span className='results-name'>Liberação das Ordens Planej.</span>
                                     {
                                         item.saida.map((ent, index) => {
-                                            return <span className='results-txt' key={index}>{ent}</span>
+                                            return <span className={`${ent === -1 ? 'stock-out' : 'results-txt'}`} key={index}>{ent === -1 ? 0 : ent}</span>
                                         })
                                     }
                                 </div>

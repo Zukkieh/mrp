@@ -21,7 +21,7 @@ export const calculate = (items) => {
                 item.estoqueProjetado[0] = item.estoqueInicial - item.entradas[0];
             }
             else {
-                item.estoqueProjetado[0] = 0;
+                item.estoqueProjetado[0] = -1;
                 // Pensar se lança excessão ou como tratar, porque se o lead time for maior que 1 semana não tem como fazer, 
                 //adicionar recebimentos programados seria complexo, uma alternativa e deixar zerar e se faltar peça deixar como na prova q era faltante mesmo e segue
                 // Talvez essa validação seja válida até mesmo para semanas iniciais, se o Lead time maior que o prazo de semanas.
@@ -42,10 +42,10 @@ export const calculate = (items) => {
                             item.estoqueProjetado[j] = (item.tamanhoLote * aux) + item.estoqueProjetado[j-1] - item.entradas[j];
                         }
                         else{
-                            item.estoqueProjetado[j] = 0;
+                            item.estoqueProjetado[j] = -1;
                         }
                     } catch (e) {
-                        item.estoqueProjetado[j] = 0;
+                        item.estoqueProjetado[j] = -1;
                         // Pensar em como informar que o lead time é maior que o tempo que se tem para produzir, ou se vamos zerar o estoque como na prova
                     }
                 }
