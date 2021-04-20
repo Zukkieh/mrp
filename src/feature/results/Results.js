@@ -11,8 +11,8 @@ const Results = () => {
 
     const items = useStoreState(store => store.items.items);
 
-    // const results = calculate(items);
-    const results = items;
+     const results = calculate(items);
+  //  const results = items;
 
     return (
         <>
@@ -48,16 +48,16 @@ const Results = () => {
                                 </div>
 
                                 <div className='results-row'>
-                                    <span className='results-name'>Recebimentos prog.</span>
+                                    <span className='results-name'>{`Est. projetado | ${item.estoqueInicial}`}</span>
                                     {
-                                        item.saida.map((ent, index) => {
+                                        item.estoqueProjetado.map((ent, index) => {
                                             return <span className='results-txt' key={index}>{ent}</span>
                                         })
                                     }
                                 </div>
 
                                 <div className='results-row'>
-                                    <span className='results-name'>{`Est. projetado ${item.estoqueInicial}`}</span>
+                                    <span className='results-name'>Recebimentos Planej.</span>
                                     {
                                         item.recebimentosProgramados.map((ent, index) => {
                                             return <span className='results-txt' key={index}>{ent}</span>
@@ -66,9 +66,9 @@ const Results = () => {
                                 </div>
 
                                 <div className='results-row'>
-                                    <span className='results-name'>Recebimento</span>
+                                    <span className='results-name'>Liberação das Ordens Planej.</span>
                                     {
-                                        item.estoqueProjetado.map((ent, index) => {
+                                        item.saida.map((ent, index) => {
                                             return <span className='results-txt' key={index}>{ent}</span>
                                         })
                                     }
