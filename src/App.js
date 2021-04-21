@@ -26,7 +26,7 @@ function App() {
             </div>
             <Lapiseira />
             <div className='navigation'>
-              <button onClick={() => setPage('result')}>{'CAULCULAR'}</button>
+              <button onClick={() => setPage('result')}>{'CALCULAR'}</button>
             </div>
           </>
         )
