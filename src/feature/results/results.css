@@ -5,6 +5,9 @@
 .result-container {
     display: flex;
     flex-direction: row;
+    box-shadow: 5px 4px 5px 0px rgb(0 0 0 / 75%);
+    margin: 0 0 10px 0;
+    border-radius: 4px;
 }
 
 .result-info-container {
@@ -14,7 +17,6 @@
     border-style: solid;
     border-radius: 4px 0 0 4px;
     border-width: 1px;
-    margin: 0 0 10px 0;
 }
 
 .result-leads-container {
@@ -24,7 +26,6 @@
     border-style: solid;
     border-radius: 0 4px 4px 0;
     border-width: 1px;
-    margin: 0 0 10px 0;
 }
 
 .info {
@@ -46,13 +47,13 @@
 
 .results-name {
     font-size: 16px;
-    width: 150px;
+    width: 225px;
     text-align: left;
 }
 
 .results-header:first-child {
     font-size: 16px;
-    width: 150px;
+    width: 225px;
     margin: 0;
     text-align: left;
     font-weight: bold;

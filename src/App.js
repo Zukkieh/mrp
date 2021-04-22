@@ -13,7 +13,7 @@ function App() {
       {
         page === 'initial' && (
           <>
-            <div className='navigation'><button onClick={() => setPage('lapiseira')}>{'>'}</button></div>
+            <div className='navigation'><button onClick={() => setPage('lapiseira')}>{'Próximo ->'}</button></div>
             <InitialParameters />
           </>
         )
@@ -22,7 +22,7 @@ function App() {
         page === 'lapiseira' && (
           <>
             <div className='navigation'>
-              <button onClick={() => setPage('initial')}>{'<'}</button>
+              <button onClick={() => setPage('initial')}>{'<- Voltar'}</button>
             </div>
             <Lapiseira />
             <div className='navigation'>
@@ -35,8 +35,8 @@ function App() {
         page === 'result' && (
           <>
             <div className='navigation'>
-              <button onClick={() => setPage('lapiseira')}>{'<'}</button>
-              <button onClick={() => setPage('initial')}>{'início'}</button>
+              <button onClick={() => setPage('lapiseira')}>{'<- Voltar'}</button>
+              <button style={{margin: '0 0 0 16px'}} onClick={() => setPage('initial')}>{'Início'}</button>
             </div>
           <Results />
           </>

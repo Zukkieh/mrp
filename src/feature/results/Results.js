@@ -48,7 +48,7 @@ const Results = () => {
                                 </div>
 
                                 <div className='results-row'>
-                                    <span className='results-name'>{`Est. projetado | ${item.estoqueInicial}`}</span>
+                                    <span className='results-name'>{`Est. projetado | `}<b>{item.estoqueInicial}</b></span>
                                     {
                                         item.estoqueProjetado.map((ent, index) => {
                                             return <span className={`${ent === -1 ? 'stock-out' : 'results-txt'}`} key={index}>{ent === -1 ? 0 : ent}</span>
