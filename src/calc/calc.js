@@ -27,19 +27,20 @@ export const calculate = (items) => {
                 // Talvez essa validação seja válida até mesmo para semanas iniciais, se o Lead time maior que o prazo de semanas.
             }
             for(let j = 1;j<8 ;j++){ // Cálculos para as demais semanas
-                if(item.estoqueProjetado[j-1] - item.entradas[j] >= item.estoqueSegurança){
-                    item.estoqueProjetado[j] = item.estoqueProjetado[j-1] - item.entradas[j];
+                const resultEstoqueProjetado = item.estoqueProjetado[j-1] === -1 ? 0 - item.entradas[j] : item.estoqueProjetado[j-1] - item.entradas[j];
+                if(resultEstoqueProjetado >= item.estoqueSegurança){
+                    item.estoqueProjetado[j] = resultEstoqueProjetado;
                 }
                 else {
                     try{
                         let aux = 1 // Variável para saber qual será o multiplicador do lote mínimo
-                        while((item.tamanhoLote * aux) +  item.estoqueProjetado[j-1] - item.entradas[j] < item.estoqueSegurança){
+                        while((item.tamanhoLote * aux) +  resultEstoqueProjetado < item.estoqueSegurança){
                             aux++;
                         } // Tenta atribuir para a semana que deve ser pedido se ela existir
                         if (j - item.leadTime >= 0){
                             item.saida[j - item.leadTime] = item.tamanhoLote * aux;
                             item.recebimentosProgramados[j] = item.tamanhoLote * aux;
-                            item.estoqueProjetado[j] = (item.tamanhoLote * aux) + item.estoqueProjetado[j-1] - item.entradas[j];
+                            item.estoqueProjetado[j] = (item.tamanhoLote * aux) + resultEstoqueProjetado;
                         }
                         else{
                             item.estoqueProjetado[j] = -1;
